@@ -10,12 +10,12 @@ function App() {
   const handleSubmit =()=>{
     // setStudent([...student, newStudent])
 
-    axios.post('http://localhost:3000/college-student/post',newStudent).then((res)=>{
+    axios.post('https://node-deploy-k7pp.onrender.com/college-student/post',newStudent).then((res)=>{
     console.log(res.data)
     })
   }
   useEffect(()=>{
-    axios.get('http://localhost:3000/college-student').then((res)=>{
+    axios.get('https://node-deploy-k7pp.onrender.com/college-student').then((res)=>{
     console.log(res.data)
     setStudent(res.data)
     })
